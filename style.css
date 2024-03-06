@@ -1,0 +1,135 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    scroll-behavior: smooth;
+}
+
+.layout{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+}
+
+.layout::-webkit-scrollbar{
+    width: 0%;
+    height: 0%;
+}
+
+.hero{
+    background-color: #212529;
+    color: white;
+    display: flex;
+    flex-direction: row; 
+    min-width: 96dvw;
+    height: 100dvh;   
+}
+
+.hero-name{
+    display: flex;
+    flex-direction: column;
+    width: 100dvw;
+    justify-content: center;
+}
+
+.name{
+    margin: 0%;
+    font-size: 7.5dvw;
+    text-align: center;
+}
+
+.nav-bar{
+    min-width: 55px;
+    height: 100dvh;
+    background-color: black;
+    color:white;
+    position: sticky;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 69;
+}
+
+.hr-line{
+    width: 0dvw;
+    position: relative;
+    left: 18dvw;
+    height: 1px;
+    background-color: white;
+    animation: load 2s normal forwards;
+}
+
+@keyframes load {
+    0%{
+        width: 0dvw;
+    }
+    100%{
+        width: 60dvw;
+    }
+}
+
+.hr-line2{
+    width: 0dvw;
+    position: relative;
+    left: 18dvw;
+    height: 1px;
+    background-color:white ;
+    animation: load2 2s normal reverse ;
+}
+
+@keyframes load2 {
+    0%{
+        width: 0dvw;
+    }
+    100%{
+        width: 60dvw;
+    }
+}
+
+.portf{
+    text-align: center;
+    margin-top: 1%;
+    font-size: 3dvw;
+}
+
+.projects{
+    background-color: white;
+    color: #212529;
+    min-width: 96dvw;
+    height: 100dvh;
+    font-size: 100px;
+    text-align: center;
+}   
+.aboutme{
+    background-color: #212529;
+    color: white    ;
+    min-width: 96dvw;
+    height: 100dvh;
+    font-size:100px ;
+}
+.resume{
+    background-color: white;
+    color: #212529;
+    min-width: 96dvw;
+    height: 100dvh;
+    font-size: 100px;
+}
+
+.thankyou{
+    background-color: #212529;
+    color: white    ;
+    min-width: 50dvw;
+    height: 100dvh;
+    font-size:100px ;
+}
+
+/* :root {
+    --light-background-color: #fff;
+    --dark-background-color: #000;
+    --background-color: #212529;
+    --primary-color: #f4a7bb;
+    --secondary-color: #aaa;
+    --light-font-color: #fff;
+    --dark-font-color: #000;
+} */
